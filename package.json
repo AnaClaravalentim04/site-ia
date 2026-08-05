@@ -1,0 +1,22 @@
+{
+  "name": "site-ia-estudos",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.x",
+    "react": "18.x",
+    "react-dom": "18.x",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "tailwindcss": "^4.0.0",
+    "autoprefixer": "^10.0.0",
+    "postcss": "^8.0.0"
+  }
+}
