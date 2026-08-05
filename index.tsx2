@@ -1,0 +1,22 @@
+import Link from 'next/link';
+
+const topics = [
+  { slug: 'matematica', name: 'Matemática' },
+  { slug: 'portugues', name: 'Português' },
+  { slug: 'historia', name: 'História' }
+];
+
+export default function Topics() {
+  return (
+    <main className="p-8">
+      <h2 className="text-2xl font-semibold">Tópicos</h2>
+      <ul className="mt-4 space-y-2">
+        {topics.map(t => (
+          <li key={t.slug}>
+            <Link href={`/topic/${t.slug}`}><a className="text-blue-600">{t.name}</a></Link>
+          </li>
+        ))}
+      </ul>
+    </main>
+  );
+}
